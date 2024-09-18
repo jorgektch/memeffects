@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    color: #000;
+    color: rgb(0, 0, 0);  /* Texto en negro puro */
     background-color: #fff;
 }
 
@@ -13,7 +13,7 @@ h1 {
 #subtitle {
     font-size: 1.5rem;
     margin-bottom: 20px;
-    color: #555;
+    color: #555;  /* Subtítulo en gris */
 }
 
 .sound-button {
@@ -22,12 +22,21 @@ h1 {
     padding: 10px 20px;
     font-size: 1rem;
     cursor: pointer;
+    background-color: rgb(0, 0, 0);  /* Fondo en negro puro */
+    color: #fff;                      /* Texto en blanco */
+    border: 2px solid #fff;           /* Borde blanco */
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sound-button:hover {
+    background-color: #555;  /* Color más claro al pasar el cursor */
 }
 
 footer {
     margin-top: 30px;
     font-size: 1rem;
-    color: #333;
+    color: rgb(0, 0, 0);  /* Texto del footer en negro puro */
 }
 
 footer p {
