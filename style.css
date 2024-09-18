@@ -107,3 +107,20 @@ footer p {
         font-size: 1rem;
     }
 }
+
+/* Contador de visitas */
+#visit-counter {
+    margin-top: 40px;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);  /* Texto negro puro */
+}
+
+#visit-counter p {
+    margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    #visit-counter {
+        font-size: 0.9rem;  /* Ajuste para móviles */
+    }
+}
