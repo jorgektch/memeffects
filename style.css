@@ -1,8 +1,11 @@
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
     color: rgb(0, 0, 0);  /* Texto en negro puro */
     background-color: #fff;
+    margin: 0;
+    padding: 20px;
 }
 
 h1 {
@@ -26,6 +29,8 @@ h1 {
     color: #fff;                      /* Texto en blanco */
     border: 2px solid #fff;           /* Borde blanco */
     border-radius: 5px;
+    width: 80%;                       /* Hacemos que los botones sean más anchos */
+    max-width: 400px;                 /* Limite de ancho máximo en pantallas grandes */
     transition: background-color 0.3s, color 0.3s;
 }
 
@@ -41,4 +46,64 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+/* Media Queries para hacerlo responsivo */
+
+/* Dispositivos pequeños (teléfonos móviles, pantallas menores a 600px) */
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 2rem;    /* Reducir tamaño del título en pantallas pequeñas */
+    }
+
+    #subtitle {
+        font-size: 1.2rem;  /* Reducir el subtítulo */
+    }
+
+    .sound-button {
+        font-size: 0.9rem;  /* Reducir el tamaño del texto en los botones */
+        padding: 8px 15px;  /* Botones más compactos */
+        width: 90%;         /* Botones más anchos en móviles */
+    }
+
+    footer p {
+        font-size: 0.9rem;  /* Texto del footer más pequeño */
+    }
+}
+
+/* Dispositivos medianos (tabletas, pantallas entre 600px y 992px) */
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+    h1 {
+        font-size: 2.2rem;   /* Ajustar tamaño del título para pantallas medianas */
+    }
+
+    #subtitle {
+        font-size: 1.3rem;   /* Ajustar el subtítulo */
+    }
+
+    .sound-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+        width: 85%;          /* Botones ocupan más ancho */
+    }
+}
+
+/* Dispositivos grandes (escritorios, pantallas mayores a 992px) */
+@media only screen and (min-width: 992px) {
+    h1 {
+        font-size: 2.5rem;   /* Tamaño de título más grande para pantallas amplias */
+    }
+
+    #subtitle {
+        font-size: 1.5rem;
+    }
+
+    .sound-button {
+        font-size: 1.1rem;   /* Botones más grandes en pantallas grandes */
+        padding: 12px 25px;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
 }
