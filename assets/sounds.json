@@ -1,17 +1,14 @@
 [
     {
         "name": "Tortuga gimiendo",
-        "file": "tortuga-gimiendo.mp3",
-        "duration": "2s"
+        "file": "tortuga-gimiendo"
     },
     {
-        "name": "Sound 2",
-        "file": "sound2",
-        "duration": "3s"
+        "name": "Caballo homosexual",
+        "file": "caballo-homosexual"
     },
     {
         "name": "Sound 3",
-        "file": "sound3",
-        "duration": "1.5s"
+        "file": "sound3"
     }
 ]
